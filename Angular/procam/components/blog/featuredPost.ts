@@ -16,6 +16,9 @@ import {CmsComponent, CmsField, CmsFieldTypes} from 'crownpeak-dxm-angular-sdk';
 export class FeaturedPost extends CmsComponent {
     // @ts-ignore
     @Input() data:any;
+    constructor() {
+        super(null);
+    }
     post_title: CmsField = new CmsField("Post_Title", CmsFieldTypes.TEXT, null);
     post_leader: CmsField = new CmsField("Post_Leader", CmsFieldTypes.WYSIWYG, null);
 }

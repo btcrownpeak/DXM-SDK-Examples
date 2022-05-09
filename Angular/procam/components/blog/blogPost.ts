@@ -7,7 +7,7 @@ import {CmsComponent, CmsField, CmsFieldTypes} from 'crownpeak-dxm-angular-sdk';
     template: `
         <div class="blog-post">
             <h2 class="blog-post-title">{{ post_title }}</h2>
-            <p class="blog-post-meta">Date: {{ post_date | date:'longdate' }}</p>
+            <p class="blog-post-meta">Date: {{ post_date }}</p>
             <p [innerHTML]="post_content"></p>
             <!-- {{ post_category }} -->
         </div>
@@ -15,7 +15,9 @@ import {CmsComponent, CmsField, CmsFieldTypes} from 'crownpeak-dxm-angular-sdk';
 })
 export class BlogPost extends CmsComponent {
     // @ts-ignore
-    @Input() data:any;
+    @Input() data:any;constructor() {
+        //super(null);
+    }
     post_title: CmsField = new CmsField("Post_Title", CmsFieldTypes.TEXT, null);
     post_date: CmsField = new CmsField("Post_Date", CmsFieldTypes.DATE, null);
     post_content: CmsField = new CmsField("Post_Content", CmsFieldTypes.WYSIWYG, null);

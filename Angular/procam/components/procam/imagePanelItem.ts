@@ -11,7 +11,9 @@ import {CmsComponent, CmsField, CmsFieldTypes} from 'crownpeak-dxm-angular-sdk';
     `
 })
 export class ImagePanelItem extends CmsComponent {
-    @Input() data: any;
+    @Input() data: any;constructor() {
+        super(null);
+    }
     image: CmsField = new CmsField("Image", CmsFieldTypes.IMAGE, null);
     alt: CmsField = new CmsField("Alt", CmsFieldTypes.TEXT, null);
 }

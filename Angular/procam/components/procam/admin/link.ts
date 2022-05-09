@@ -11,6 +11,9 @@ import {CmsComponent, CmsField, CmsFieldTypes} from 'crownpeak-dxm-angular-sdk';
     `
 })
 export class Link extends CmsComponent {
+    constructor() {
+        super(null);
+    }
     title: CmsField = new CmsField("Title", CmsFieldTypes.TEXT, null);
     url: CmsField = new CmsField("Url", CmsFieldTypes.HREF, null);
 }

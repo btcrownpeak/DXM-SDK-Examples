@@ -16,6 +16,8 @@ import {CmsComponent, CmsStaticDataProvider} from 'crownpeak-dxm-angular-sdk';
 })
 export class TopicList extends CmsComponent {
     // @ts-ignore
-    @Input() data: any;
+    @Input() data: any;constructor() {
+        super(null);
+    }
     topics: {} = new CmsStaticDataProvider().getCustomDataSync("topics.json");
 }

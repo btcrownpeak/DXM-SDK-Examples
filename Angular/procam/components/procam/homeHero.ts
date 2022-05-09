@@ -25,7 +25,9 @@ import {CmsComponent, CmsField, CmsFieldTypes} from 'crownpeak-dxm-angular-sdk';
     `
 })
 export class HomeHero extends CmsComponent {
-    @Input() data: any;
+    @Input() data: any;constructor() {
+      super(null);
+    }
     desktop_banner_image: CmsField = new CmsField("Desktop_Banner_Image", CmsFieldTypes.IMAGE, null);
     desktop_banner_alt: CmsField = new CmsField("Desktop_Banner_Alt", CmsFieldTypes.TEXT, null);
     mobile_banner_image: CmsField = new CmsField("Mobile_Banner_Image", CmsFieldTypes.IMAGE, null);
