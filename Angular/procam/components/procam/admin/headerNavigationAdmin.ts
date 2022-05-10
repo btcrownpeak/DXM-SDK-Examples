@@ -18,7 +18,7 @@ import {CmsComponent, CmsField, CmsDataCache} from 'crownpeak-dxm-angular-sdk';
 })
 export class HeaderNavigationAdmin extends CmsComponent {
     constructor() {
-        super(null);
+      super(null);
     }
     nav_items: CmsField = new CmsField("Nav_Items", "", CmsDataCache.get(CmsDataCache.cmsAssetId).Nav_Items.Links || []);
 }

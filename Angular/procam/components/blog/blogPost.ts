@@ -15,8 +15,9 @@ import {CmsComponent, CmsField, CmsFieldTypes} from 'crownpeak-dxm-angular-sdk';
 })
 export class BlogPost extends CmsComponent {
     // @ts-ignore
-    @Input() data:any;constructor() {
-        //super(null);
+    @Input() data:any; 
+    constructor() {
+      super(null);
     }
     post_title: CmsField = new CmsField("Post_Title", CmsFieldTypes.TEXT, null);
     post_date: CmsField = new CmsField("Post_Date", CmsFieldTypes.DATE, null);

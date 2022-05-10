@@ -29,8 +29,9 @@ import {CmsComponent, CmsField, CmsFieldTypes} from 'crownpeak-dxm-angular-sdk';
     `
 })
 export class Events extends CmsComponent {
-    @Input() data: any;constructor() {
-        super(null);
+    @Input() data: any;
+    constructor() {
+      super(null);
     }
     title: CmsField = new CmsField("Title", CmsFieldTypes.TEXT, null);
     sub_title: CmsField = new CmsField("Sub_Title", CmsFieldTypes.TEXT, null);

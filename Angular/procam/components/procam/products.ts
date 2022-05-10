@@ -24,8 +24,9 @@ import {CmsComponent, CmsField, CmsFieldTypes} from 'crownpeak-dxm-angular-sdk';
     `
 })
 export class Products extends CmsComponent {
-    @Input() data: any;constructor() {
-        super(null);
+    @Input() data: any;
+    constructor() {
+      super(null);
     }
     title: CmsField = new CmsField("Title", CmsFieldTypes.TEXT, null);
     products: CmsField = new CmsField("Products", "ProductItem", null);

@@ -16,7 +16,8 @@ import {CmsComponent} from 'crownpeak-dxm-angular-sdk';
 })
 export class MonthHeader extends CmsComponent {
     // @ts-ignore
-    @Input() month: any;constructor() {
-        super(null);
+    @Input() month: any;
+    constructor() {
+      super(null);
     }
 }

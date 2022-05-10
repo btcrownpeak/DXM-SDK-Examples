@@ -20,16 +20,17 @@ import {CmsComponent, CmsStaticDataProvider, CmsDynamicDataProvider} from 'crown
 })
 export class HeaderNavigation extends CmsComponent {
     // @ts-ignore
-    @Input() dataProvider: any; constructor() {
-        super(null);
-     } 
+    @Input() dataProvider: any; 
+    constructor() {
+      super(null);
+    } 
     nav_items: [];
 
     ngOnInit() {
-       // if(this.dataProvider instanceof CmsStaticDataProvider) {
+        //if(this.dataProvider instanceof CmsStaticDataProvider) {
             this.nav_items = new CmsStaticDataProvider().getCustomDataSync("284201.json").HeaderNavigationAdmin.NavItems; }
-       // else if (this.dataProvider instanceof CmsDynamicDataProvider) {
-       //     this.nav_items = new CmsDynamicDataProvider().getDynamicQuerySync("q=284201&fl=custom_t_json:[json]").response.docs[0].custom_t_json.HeaderNavigationAdmin.NavItems;
-       // }
+        //else if (this.dataProvider instanceof CmsDynamicDataProvider) {
+        //    this.nav_items = new CmsDynamicDataProvider().getDynamicQuerySync("q=284201&fl=custom_t_json:[json]").response.docs[0].custom_t_json.HeaderNavigationAdmin.NavItems;
+        //}
     //} 
 }

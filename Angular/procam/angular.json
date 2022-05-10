@@ -20,7 +20,8 @@
             "tsConfig": "./core/tsconfig.app.json",
             "aot": true,
             "scripts": [],
-            "assets": ["./content"]
+            "assets": ["./content"],
+            "optimization": false
           }
         },
         "serve": {

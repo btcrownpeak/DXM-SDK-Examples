@@ -24,7 +24,7 @@ import {CmsComponent, CmsField} from 'crownpeak-dxm-angular-sdk';
 })
 export class TwoBluePanels extends CmsComponent {
     constructor() {
-        super(null);
+      super(null);
     }
     panels: CmsField = new CmsField("Panels", "PanelItem", null);
 }
